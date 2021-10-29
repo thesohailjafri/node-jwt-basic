@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "3f9d024b-0160-4c9d-bf5c-4adde405d4c4",
+		"name": "JWT BASIC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "dashboard",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJiZDAxZTU2LWFmYWEtNDBiMy05Y2RkLTJiYjM2MDQ4NzY5NCIsInVzZXJuYW1lIjoiMjAiLCJpYXQiOjE2MzU1MzE2MDAsImV4cCI6MTYzNTcwNDQwMH0.gdlnU89nQZJJlHH7YW2THSpFG9M3ky6MI8tAWfpSbOo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{jwtV1}}/dashboard",
+					"host": [
+						"{{jwtV1}}"
+					],
+					"path": [
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"20\",\r\n    \"password\":\"20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{jwtV1}}/login",
+					"host": [
+						"{{jwtV1}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
